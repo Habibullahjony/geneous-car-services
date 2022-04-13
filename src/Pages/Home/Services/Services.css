@@ -1,0 +1,20 @@
+.text {
+	text-align: center;
+	color: rgb(3, 65, 65);
+}
+.cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 30px;
+	margin: 0 30px;
+}
+@media only screen and (max-width: 568px) {
+	.cards {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+@media only screen and (min-width: 569px) and (max-width: 999px) {
+	.cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
